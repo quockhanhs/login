@@ -1,0 +1,69 @@
+body{
+	background-image: url(background.jpeg);
+	background-color: #1c8ef8;
+	font-family: sans-serif;
+
+}
+.login{
+	width: 344px;
+	height: 350px;
+	/*background-color: green;*/
+	text-align: center;
+	margin: 0 auto;
+	background-color: white;
+}
+h2{
+	display: inline-block;
+	color: #868787;
+}
+.login input{
+	width: 300px;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding-left: 20px;
+	display: inline-block;
+
+}
+.check input{
+	width: 10px;
+	height: auto;
+}
+.check{
+	height: 40px;
+	float: left;
+	padding-left: 20px;
+	display: flex;
+	justify-self: flex-end;
+	position: relative;
+}
+button{
+	width: 220px;
+	height: 40px;
+	border-radius: 5px;
+	border:none;
+	background-color: #167bff;
+	color: white;
+	;
+}
+button:hover{
+	width: 222px;
+	height: 44px;
+}
+.check a{
+	float: right;
+	padding-left: 60px;
+	justify-content: right;
+	align-items: right;
+	color: rgb(134, 120, 120);
+	margin: 0 1px;
+}
+.languages{
+	width: 1000px;
+	height: 350px;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	margin: 0 auto;
+}

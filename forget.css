@@ -1,0 +1,40 @@
+
+body{
+	background-image: url(background.jpeg);
+	background-size: auto;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+.forget{
+	width: 500px;
+	height: 350px;
+	text-align: center;
+	border: 1pt;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+}
+.forget input{
+    width: 320px;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding-left: 20px;
+	display: inline-block;
+}
+button{
+	width: 220px;
+	height: 40px;
+	border-radius: 5px;
+	border:none;
+	background-color: #167bff;
+	color: white;
+}
+button:hover{
+	width: 222px;
+	height: 44px;
+}
