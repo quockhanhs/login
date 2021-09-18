@@ -1,13 +1,11 @@
 body{
-	background-image: url(background.jpeg);
+	background-image: url(image/background.jpeg);
 	background-color: #1c8ef8;
-	font-family: sans-serif;
-
+	display: flex;
 }
 .login{
 	width: 344px;
-	height: 350px;
-	/*background-color: green;*/
+	height: 500px;
 	text-align: center;
 	margin: 0 auto;
 	background-color: white;
@@ -38,7 +36,23 @@ h2{
 	justify-self: flex-end;
 	position: relative;
 }
-button{
+.login span{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: #8e44ad;
+	cursor: pointer;
+	display: none;
+  }
+  .login input:valid ~ span{
+	display: block;
+  }
+  .login span i.hide-btn::before{
+	content: "f070";
+  }
+.login button{
 	width: 220px;
 	height: 40px;
 	border-radius: 5px;
@@ -47,7 +61,7 @@ button{
 	color: white;
 	;
 }
-button:hover{
+.login button:hover{
 	width: 222px;
 	height: 44px;
 }
@@ -59,11 +73,15 @@ button:hover{
 	color: rgb(134, 120, 120);
 	margin: 0 1px;
 }
-.languages{
-	width: 1000px;
+login .languages{
+	width: 344px;
 	height: 350px;
 	text-align: center;
 	border: none;
 	border-radius: 10px;
 	margin: 0 auto;
+}
+.login .pass img{
+	width: 20px;
+	vertical-align: middle;
 }

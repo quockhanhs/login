@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ABC Khanh thay doi</title>
+	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 <body>
 	<div class="login">
-		<img src="logo.png">
+		<img id="logo" src="logo.png">
 		<br>
 		<br>
-		<h2>login</h2>
+		<h2>Đăng nhập</h2>
 		<br>
-		<input class="email" type="text" placeholder="Email">
+		<input id="email" type="text" placeholder="Email">
 		<br>
-		<input class="password" type="password" placeholder="Mật khẩu">
-		<br>
+		<div class=pass>
+			<input id="pass" type="password" placeholder="Password" />
+			<img onclick="myfunction()" src="image/eye.jpg">
+		</div>
+			<br>
 		<div class="check">
 			<input class="checkbox" type="checkbox"> Lưu mật khẩu
 			<a href="file:///C:/Users/Admin/Desktop/html_css_java_script/login/forget.html">Quên mật khẩu</a>	
@@ -23,13 +28,22 @@
 		<br>
 		<button>Đăng nhập</button>
 		<br>
+		<div class="languages">Ngôn Ngữ
+			<img src="image/220-vietnam.png" alt class="language.img">Tiếng Việt
+			<img src="image/226-united-states.png" alt class="language.img">Tiếng Anh
+		</div>
 	</div>
-	<div class="languages">
-		<h4>Ngôn ngữ</h4>
-		<input class="vietnamese" type="image" src="220-vietnam.png">
-		<a href=""></a> Tiếng Việt 
-		<input class="english" type="image" src="226-united-states.png">
-		<a href=""></a> Tiếng Anh
-</div>
+	<script type="text/javascript">
+		var x = true;
+		function myfunction(){
+		if(x){
+			document.getElementById('pass').type = "text";
+			x = false;
+		}	else{
+			document.getElementById('pass').type = "password";
+			x = true;		
+		}
+	}	
+	  </script>
 </body>
 </html>
